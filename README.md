@@ -18,3 +18,6 @@
    3. bookmark/admin Bookmark
       1. python manage.py createsuperuser
       2. bookmark/models Bookmark \_\_str\_\_()
+   4. bookmark/views BookmarkListView
+   5. bookmark/urls bookmark:list
+   6. templates bookmark_list.html
