@@ -21,7 +21,7 @@
         <tr>
             <td>{{ forloop.counter }}</td>
             <td>{{ bookmark.name }}</td>
-            <td>{{ bookmark.url }}</td>
+            <td><a href="{{ bookmark.url }}">{{ bookmark.url }}</a></td>
             <td>Edit</td>
             <td>Delete</td>
         </tr>
