@@ -7,5 +7,6 @@
 <body>
 <h1>{{ bookmark.name }}</h1>
 <a href="{{ bookmark.url }}">{{ bookmark.url }}</a>
+<a href="{% url 'bookmark:list' %}">GO to Bookmark List</a>
 </body>
 </html>
