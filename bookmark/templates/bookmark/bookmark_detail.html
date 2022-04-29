@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Bookmark Detail</title>
-</head>
-<body>
+{% extends '../../../templates/base.html' %}
+
+{% block title %}Bookmark Detail{%  endblock %}
+
+{% block content %}
 <h1>{{ bookmark.name }}</h1>
 <a href="{{ bookmark.url }}">{{ bookmark.url }}</a>
 <a href="{% url 'bookmark:list' %}">GO to Bookmark List</a>
-</body>
-</html>
+{% endblock %}

@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>edit Bookmark</title>
-</head>
-<body>
+{% extends '../../../templates/base.html' %}
+
+{% block title %}edit Bookmark{%  endblock %}
+
+{% block content %}
 <form action="" method="post">
     {%  csrf_token %}
     {{ form.as_ul }}
     <input type="submit" value="Edit">
 </form>
-</body>
-</html>
+{% endblock %}

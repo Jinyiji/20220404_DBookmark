@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Bookmark List</title>
-</head>
-<body>
+{%  extends '../../../templates/base.html' %}
+
+{% block title %}Bookmark List{%  endblock %}
+
+{%  block content %}
 <a href="{%  url 'bookmark:add' %}">aAdd Bookmark</a>
 <table>
     <thead>
@@ -28,5 +26,4 @@
     {%  endfor %}
     </tbody>
 </table>
-</body>
-</html>
+{%  endblock %}
